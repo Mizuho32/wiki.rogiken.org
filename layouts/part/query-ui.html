@@ -18,7 +18,7 @@
               <div v-if="cond=='exact'||cond=='descendant'">
                 <ul class="htags">              <!-- tag1/tag1-1, tag2 -->
                   <li v-for="(index1, htag) in htags" style="display:flex">
-                    <div class="htags content" style="display:flex;align-items:center;overflow-x: scroll;" v-on:mouseenter="enterhtag(index1, $event)" v-on:mouseleave="leavehtag($event)" v-el:htag>                      
+                    <div class="htags content" style="display:flex;align-items:center;" v-on:mouseenter="enterhtag(index1, $event)" v-on:mouseleave="leavehtag($event)" v-el:htag>                      
                       <ul class="htag">    <!-- tag1/tag1-1 -->
                         <div v-on:click="removehtag(index1)" class="fa fa-tags"></div>
                         <li v-for="(index2, tag) in htag">
